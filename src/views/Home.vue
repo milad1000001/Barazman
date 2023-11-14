@@ -1,7 +1,7 @@
 <template>
-  <HelloWorld />
+  <BCarousel />
 </template>
 
 <script lang="ts" setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+import BCarousel from "@/components/design-system/carousel/index.vue";
 </script>
