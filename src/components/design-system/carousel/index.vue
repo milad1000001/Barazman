@@ -1,14 +1,24 @@
 <template>
-  <v-carousel height="400" hide-delimiters progress="primary">
-    <v-carousel-item v-for="(slide, i) in slides" :key="i">
-      <v-sheet height="100%">
-        <div class="d-flex fill-height justify-center align-center">
-          <div class="text-h2">{{ slide }} Slide</div>
+  <v-img :src="image" height="700" width="100%" cover>
+    <div
+      class="d-flex flex-column fill-height justify-center align-left text-white darken"
+    >
+      <div class="ml-16">
+        <strong class="text-h4 font-weight-bold mb-4">
+          The only way to do great work, is to love what you do.
+        </strong>
+        <div class="text-subtitle-1 font-weight-bold">
+          WE LOVE AND WE CARE ...
         </div>
-      </v-sheet>
-    </v-carousel-item>
-  </v-carousel>
+      </div>
+    </div>
+  </v-img>
 </template>
 <script lang="ts" setup>
-const slides = ["First", "Second", "Third", "Fourth", "Fifth"];
+defineProps<{ image: string }>();
 </script>
+<style scoped>
+.v-img :deep(img) {
+  filter: brightness(70%);
+}
+</style>
