@@ -18,7 +18,7 @@
         </p>
       </div>
       <div class="text-center ml-4">
-        <v-img src="src/assets/product/1.jpg" width="300px" height="300px" />
+        <v-img src="@/assets/product/1.jpg" width="300px" height="300px" />
         <strong> BarazPenetrometer </strong>
       </div>
     </section>
@@ -26,7 +26,7 @@
     <section class="d-flex align-center justify-center">
       <div class="text-center mr-8">
         <v-img
-          src="src/assets/product/2.jpg"
+          src="@/assets/product/2.jpg"
           width="500px"
           height="300px"
           cover
