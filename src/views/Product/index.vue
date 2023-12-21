@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="product-container">
     <ProductItem :productItem="ProductItemJson"></ProductItem>
   </div>
 </template>
@@ -8,5 +8,3 @@
 import ProductItem from "@/components/design-system/productItem/index.vue";
 import ProductItemJson from "@/assets/json/items.json";
 </script>
-
-<style scoped></style>

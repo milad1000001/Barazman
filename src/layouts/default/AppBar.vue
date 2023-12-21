@@ -14,9 +14,7 @@
   <v-navigation-drawer v-model="toggle" temporary fixed width="100px">
     <v-list>
       <v-list-item v-for="item in items" :key="item.title" :to="item.route">
-        <v-list-item-icon>
-          <v-icon>{{ item.icon }}</v-icon>
-        </v-list-item-icon>
+        <v-icon>{{ item.icon }}</v-icon>
       </v-list-item>
     </v-list>
   </v-navigation-drawer>

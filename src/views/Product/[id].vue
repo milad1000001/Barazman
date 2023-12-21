@@ -1,13 +1,11 @@
 <template>
-  <div>
+  <div class="product-item-container">
     <BCarousel
       :haveTitle="false"
       :image="`/src/assets/header/${getItemById.headerImage}`"
     />
-    <BContainer class="py-6">
-      <p>
-        {{ getItemById.description }}
-      </p>
+    <BContainer class="product-item-container__item">
+      {{ getItemById.description }}
     </BContainer>
   </div>
 </template>
@@ -26,4 +24,12 @@ const getItemById = computed(() => {
 });
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+@media (max-width: 700px) {
+  .product-item-container {
+    &__item {
+      padding: 1rem;
+    }
+  }
+}
+</style>
