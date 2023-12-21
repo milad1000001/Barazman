@@ -1,6 +1,7 @@
 <template>
   <v-img :src="image" height="700" width="100%" cover>
     <div
+      v-if="haveTitle"
       class="d-flex flex-column fill-height justify-center align-left text-white darken"
     >
       <div class="ml-16">
@@ -15,7 +16,9 @@
   </v-img>
 </template>
 <script lang="ts" setup>
-defineProps<{ image: string }>();
+withDefaults(defineProps<{ image: string; haveTitle: boolean }>(), {
+  haveTitle: true,
+});
 </script>
 <style scoped>
 .v-img :deep(img) {

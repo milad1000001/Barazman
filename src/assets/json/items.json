@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "src/assets/product/1.jpg",
+    "headerImage": "6.jpg",
+    "title": "Baraz Penetrometer",
+    "price": "120$",
+    "description":"Our solution has two hardware and software parts. The hardware part is a developed electronic device by our team based on microprocessors and sensors with ability of real time monitoring, gathering data, remote transferring data which using GPS, gyroscope, accelerometer,etc. It can measure compaction and moisture of soil in each centimeter until 1 meter depth with real time graph. The mentioned device use Bluetooth and wireless methods for transferring data to server. There is also some unique features like quick calibration, detecting angle, Geographical coordinate data tag. The software part uses data to analyzing and deciding which the soil is suitable for Planting the crop or not and if not what action plans need to be done on specified Geographical coordinates. All settings have customization ability for related business domains like civil and building engineering."
+  }
+]

@@ -31,7 +31,6 @@ const items = [
     icon: "mdi-bookmark-multiple-outline",
     route: "/product",
   },
-  { title: "About Us", icon: "mdi-information-outline", route: "/about" },
   { title: "Contact Us", icon: "mdi-voicemail", route: "/contact" },
 ];
 </script>

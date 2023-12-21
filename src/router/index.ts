@@ -7,24 +7,24 @@ const routes = [
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       {
-        path: '',
         name: 'Home',
+        path: '',
         component: () => import('@/views/Home.vue'),
       },
       {
-        path: '/contact',
         name: 'Contact',
+        path: '/contact',
         component: () => import('@/views/Contact.vue'),
       },
       {
+        name: 'Product',
         path: '/product',
-        name: 'product',
-        // component: () => import('@/views/product.vue'),
+        component: () => import('@/views/Product/index.vue'),
       },
       {
-        path: '/about',
-        name: 'about',
-        // component: () => import('@/views/about.vue'),
+        name: 'ProductItem',
+        path: '/product/:id',
+        component: () => import('@/views/Product/[id].vue'),
       },
     ],
   },

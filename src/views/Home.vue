@@ -1,7 +1,7 @@
 <template>
   <BCarousel :image="homeSliderImages" />
   <BContainer class="py-6">
-    <section class="d-flex justify-center align-center">
+    <section class="d-flex flex-column flex-md-row justify-center align-center">
       <div>
         <strong class="text-h4 font-weight-bold">The Challange</strong>
         <p class="text-body-1 mt-4">
@@ -23,7 +23,7 @@
       </div>
     </section>
     <v-divider class="my-6" />
-    <section class="d-flex align-center justify-center">
+    <section class="d-flex align-center justify-center flex-column flex-md-row">
       <div class="text-center mr-8">
         <v-img
           src="@/assets/product/2.jpg"

@@ -4,6 +4,6 @@
 <style lang="scss" scoped>
 #responsive {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 </style>
