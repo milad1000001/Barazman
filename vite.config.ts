@@ -13,7 +13,6 @@ export default defineConfig({
     vue({
       template: { transformAssetUrls },
     }),
-    // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
     vuetify({
       autoImport: true,
       styles: {
@@ -38,7 +37,7 @@ export default defineConfig({
     },
     extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
   },
-  base: './',
+  base: '../',
   server: {
     port: 3000,
   },
