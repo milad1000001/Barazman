@@ -1,6 +1,6 @@
 <template>
   <div>
-    <BCarousel :image="productSliderImages" />
+    <BCarousel :image="headerImage" />
     <BContainer class="product-item-container">
       <div
         v-for="(item, index) in productItem"
@@ -9,7 +9,7 @@
       >
         <RouterLink :to="{ name: 'ProductItem', params: { id: item.id } }">
           <div>
-            <v-img :src="item.imageUrl" width="300px" height="100%" cover />
+            <v-img :src="imageUrl" width="300px" height="100%" cover />
           </div>
           <strong>{{ item.title }}</strong>
           <small>{{ item.price }}</small>
@@ -20,6 +20,8 @@
 </template>
 
 <script lang="ts" setup>
+import imageUrl from "/src/assets/product/1.jpg";
+import headerImage from "/src/assets/header/6.jpg";
 import BContainer from "@/components/design-system/container/index.vue";
 import BCarousel from "@/components/design-system/carousel/index.vue";
 
@@ -33,7 +35,6 @@ interface Product {
   }>;
 }
 defineProps<Product>();
-const productSliderImages = "src/assets/header/2.jpg";
 </script>
 
 <style lang="scss" scoped>

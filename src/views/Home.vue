@@ -1,6 +1,6 @@
 <template>
   <div class="home-container">
-    <BCarousel :image="homeSliderImages" />
+    <BCarousel :image="header" />
     <BContainer class="py-6">
       <div class="home-container__challange">
         <div>
@@ -58,7 +58,8 @@
 </template>
 
 <script lang="ts" setup>
-const homeSliderImages = "src/assets/header/1.jpg";
+import header from "/src/assets/header/1.jpg";
+
 import BCarousel from "@/components/design-system/carousel/index.vue";
 import BContainer from "@/components/design-system/container/index.vue";
 </script>

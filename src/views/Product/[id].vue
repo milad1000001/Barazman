@@ -1,9 +1,6 @@
 <template>
   <div class="product-item-container">
-    <BCarousel
-      :haveTitle="false"
-      :image="`/src/assets/header/${getItemById.headerImage}`"
-    />
+    <BCarousel :haveTitle="false" :image="headerImage" />
     <BContainer class="product-item-container__item">
       {{ getItemById.description }}
     </BContainer>
@@ -11,6 +8,7 @@
 </template>
 
 <script setup lang="ts">
+import headerImage from "/src/assets/product/2.jpg";
 import BCarousel from "@/components/design-system/carousel/index.vue";
 import BContainer from "@/components/design-system/container/index.vue";
 import { computed } from "vue";
