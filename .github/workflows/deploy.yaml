@@ -23,7 +23,8 @@ jobs:
         with:
           version: 7
           run_install: |
-            - recursive: false
+            - recursive: true
+              args: [--frozen-lockfile]
 
       - name: Build project
         run: pnpm run build
