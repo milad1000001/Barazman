@@ -37,7 +37,7 @@ export default defineConfig({
     },
     extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
   },
-  base: '/barazman/'
+  base: '/barazman/',
   server: {
     port: 3000,
   },
