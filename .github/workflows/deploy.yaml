@@ -24,7 +24,6 @@ jobs:
           version: 7
           run_install: |
             - recursive: false
-              args: [--frozen-lockfile, --strict-peer-dependencies]
 
       - name: Build project
         run: pnpm run build
