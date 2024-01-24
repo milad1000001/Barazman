@@ -33,7 +33,7 @@ jobs:
         run: pnpm run build
 
       - name: List Directory
-        run: ls
+        run: ls dist
         
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
@@ -54,7 +54,7 @@ jobs:
           name: production-files
           path: ./dist
       - name: List Directory
-        run: ls
+        run: ls dist
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
