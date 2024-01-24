@@ -8,6 +8,12 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
   
 jobs:
   build:
@@ -35,10 +41,9 @@ jobs:
       - name: List Directory
         run: ls dist
         
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: production-files
           path: ./dist
 
   deploy:
@@ -56,7 +61,5 @@ jobs:
       - name: List Directory
         run: cat dist/index.html
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+        id: deployment
+        uses: actions/deploy-pages@v4
