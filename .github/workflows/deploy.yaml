@@ -54,7 +54,7 @@ jobs:
           name: production-files
           path: ./dist
       - name: List Directory
-        run: ls dist
+        run: cat dist/index.html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
